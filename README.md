@@ -22,10 +22,10 @@ string = "<p>Lots of html <b>with bolded stuff</b></p>"
 HtmlAwareTruncation.truncate_html(string, length: 10)
 # => "<p>Lots of h…</p>"
 
-HtmlAwareTruncation.truncate_html(string, length: 10, separator: /\b/)
+HtmlAwareTruncation.truncate_html(string, length: 10, separator: /\s/)
 # => "<p>Lots of …</p>"
 
-HtmlAwareTruncation.truncate_html(string, length: 10, separator: /\b/, omission: '--')
+HtmlAwareTruncation.truncate_html(string, length: 10, separator: /\s/, omission: '--')
 # => "<p>Lots of --</p>"
 ```
 
