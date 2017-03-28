@@ -18,10 +18,13 @@ I was unable to find an existing solution that met my needs:
 ```ruby
 require 'html_aware_truncation'
 string = "<p>Lots of html <b>with bolded stuff</b></p>"
+
 HtmlAwareTruncation.truncate_html(string, length: 10)
 # => "<p>Lots of h…</p>"
+
 HtmlAwareTruncation.truncate_html(string, length: 10, separator: /\b/)
 # => "<p>Lots of …</p>"
+
 HtmlAwareTruncation.truncate_html(string, length: 10, separator: /\b/, omission: '--')
 # => "<p>Lots of --</p>"
 ```
