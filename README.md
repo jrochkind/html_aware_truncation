@@ -1,7 +1,7 @@
 # HtmlAwareTruncation
 
-Yet another HTML-aware truncater. Truncate HTML to max text characters, resulting
-in still legal HTML without any unclosed tags etc.
+Yet another ruby html-aware truncation routine. Truncate HTML to max text characters,
+resulting in still legal HTML without any unclosed tags etc.
 
 I was unable to find an existing solution that met my needs:
 * Uses [nokogiri](https://github.com/sparklemotion/nokogiri) (cause it's really good at handling somewhat invalid HTML input, and you probably already have it as a dependency)

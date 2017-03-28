@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jonathan Rochkind"]
   spec.email         = ["jrochkind@chemheritage.org"]
 
-  spec.summary       = %q{Yet another html-aware truncation routine}
+  spec.summary       = %q{Yet another ruby html-aware truncation routine}
   #spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
