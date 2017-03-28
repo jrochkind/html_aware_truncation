@@ -1,4 +1,6 @@
 # HtmlAwareTruncation
+[![Build Status](https://travis-ci.org/jrochkind/html_aware_truncation.svg?branch=master)](https://travis-ci.org/jrochkind/html_aware_truncation)
+[![Gem Version](https://badge.fury.io/rb/html_aware_truncation.svg)](https://badge.fury.io/rb/html_aware_truncation)
 
 Yet another ruby html-aware truncation routine. Truncate HTML to max text characters,
 resulting in still legal HTML without any unclosed tags etc.
