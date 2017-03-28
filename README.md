@@ -1,6 +1,7 @@
 # HtmlAwareTruncation
-[![Build Status](https://travis-ci.org/jrochkind/html_aware_truncation.svg?branch=master)](https://travis-ci.org/jrochkind/html_aware_truncation)
 [![Gem Version](https://badge.fury.io/rb/html_aware_truncation.svg)](https://badge.fury.io/rb/html_aware_truncation)
+[![Build Status](https://travis-ci.org/jrochkind/html_aware_truncation.svg?branch=master)](https://travis-ci.org/jrochkind/html_aware_truncation)
+
 
 Yet another ruby html-aware truncation routine. Truncate HTML to max text characters,
 resulting in still legal HTML without any unclosed tags etc.
@@ -55,11 +56,10 @@ This isn't perfect, but it's good enough for me to use in several production
 apps. In edge cases, it may sometimes:
 
 * May in some cases be an extra character (or a few) above the specified `length` limit (off by one error maybe?)
-* leave spaces it doesn't need to leave: `"<p>Lots of …</p>"`
 * put the omission mark in a node of it's own, which is kind of silly: `"<p>Stuff <b>…</b></p>"`
 * leave one or more empty nodes at the end: `"<p>Stuff and...<b></b></p>"`
 * Put the omission mark in a tag/node that really ought not to have text content: `"<ul><li>stuff</li>…</ul>"
-  (This one bothers me the most, it's the only case I know this gem produces illegal HTML, but generally happens rarely)
+  (This one bothers me the most, it's the only case I know this gem produces slightly illegal HTML, but generally happens rarely)
 
 Some specs marked `pending` demonstrate some "bad behavior", but there may be others un-tested.
 
