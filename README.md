@@ -10,7 +10,8 @@ I was unable to find an existing solution that met my needs:
 * Uses [nokogiri](https://github.com/sparklemotion/nokogiri) (cause it's really good at handling somewhat invalid HTML input, and you probably already have it as a dependency)
 * Does not monkey-patch nokogiri or String or anything else.
 * Follows Rails [truncate helper](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-truncate)
-  semantics, including a custom :separator that can be a string or regex, usually for word boundaries.
+  semantics, including a custom :separator that can be a string or regex, usually for word boundaries, but
+  a max-length still in terms of characters.
 
 
 ## Usage
